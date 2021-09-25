@@ -32,18 +32,18 @@
 
 
 // To generate the items using the response json file
-function generatePortItems(file) {
+function generatePortItems(data) {
     // Container
     let mainDiv = document.getElementById("mainDiv");
 
-    file.forEach( category => {
+    data.forEach( category => {
         category.elements.forEach( element => {
             // portfolio-item div
             let firstDiv = document.createElement("div");
             
             firstDiv.classList.add("col-lg-4");
 
-            firstDiv.classList.add("col-lg-4");
+            firstDiv.classList.add("col-lg-6");
 
             firstDiv.classList.add("portfolio-item");
             
@@ -78,7 +78,7 @@ function generatePortItems(file) {
 
             firstA.href = element.imgURL[0];
 
-            firstA.data-gallery = "portfolioGallery";
+            firstA.dataGallery = "portfolioGallery";
 
             firstA.classList.add("portfolio-lightbox");
 
@@ -89,7 +89,9 @@ function generatePortItems(file) {
             // first i
             let firstI = document.createElement("i");
 
-            firstI.classList.add("bx bx-plus");
+            firstI.classList.add("bx");
+
+            firstI.classList.add("bx-plus");
 
             // second a
             let secondA = document.createElement("a");
@@ -103,7 +105,9 @@ function generatePortItems(file) {
             // second i
             let secondI = document.createElement("i");
 
-            secondI.classList.add("bx bx-link");
+            secondI.classList.add("bx");
+
+            secondI.classList.add("bx-link");
 
             // append first and second i at its respectively a tag element
             firstA.appendChild(firstI);

@@ -2,7 +2,7 @@ let data =
     `[
         {
             "category" : "Toldos",
-            "elems" : 
+            "elements" : 
             [
                 {
                     "name" : "Simplex",
