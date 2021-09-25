@@ -610,6 +610,16 @@ section {
   font-size: 14px;
 }
 
+#about .about-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+#about .order-1 {
+  display: flex;
+  align-self: center;
+}
+
+
 /* Facts Section
 --------------------------------*/
 #facts {
@@ -918,6 +928,15 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
+}
+
+.portfolio-item {
+  height: 25em !important;
+}
+
+.img-fluid {
+  width: 100% !important;
+  height: 100% !important;
 }
 
 /* Team Section
